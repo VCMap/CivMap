@@ -11,7 +11,7 @@ const LeafBaseMap = ({
   if (!basemapId) return null
   const tileBounds = [[-borderApothem, -borderApothem], [borderApothem, borderApothem]]
   return <RL.TileLayer
-    url={tilesRoot + basemapId + '/z{z}/X={x},Z={y}.png'}
+    url={tilesRoot + basemapId + '/z{z}/X={x} Z={y}.png'}
     errorTileUrl={'data:image/gifbase64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'}
     tileSize={32}
     bounds={tileBounds}
