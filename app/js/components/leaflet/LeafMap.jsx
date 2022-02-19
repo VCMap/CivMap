@@ -95,9 +95,9 @@ class LeafMap extends React.Component {
         ref={this.onRef.bind(this)}
         crs={mcCRS}
         center={[0, 0]}
-        zoom={-6}
-        maxZoom={5}
-        minZoom={-6}
+        zoom={0}
+        maxZoom={0}
+        minZoom={0}
         attributionControl={false}
         zoomControl={false}
         onmoveend={this.onViewChange.bind(this)}
